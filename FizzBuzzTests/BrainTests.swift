@@ -58,23 +58,23 @@ class BrainTests: XCTestCase {
     //MARK: - Game logic Tests
     func testSayFizz() {
         let result = brain.check(3)
-        XCTAssertEqual(result, "Fizz")
+        XCTAssertEqual(result, Move.Fizz)
     }
     
     func testSayBuzz() {
         let result = brain.check(5)
-        XCTAssertEqual(result, "Buzz")
+        XCTAssertEqual(result, Move.Buzz)
     }
     
     func testSayFizzBuzz() {
         let result = brain.check(15)
-        XCTAssertEqual(result, "FizzBuzz")
+        XCTAssertEqual(result, Move.FizzBuzz)
     }
     
     func testSayNumber() {
         let number = 1
         let result = brain.check(number)
-        XCTAssertEqual(result, "\(number)")
+        XCTAssertEqual(result, Move.Number)
     }
     
 }

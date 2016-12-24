@@ -42,28 +42,44 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W4Z-rX-kdJ" userLabel="Score">
                                         <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="numberButton"/>
                                         <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="70"/>
                                         <state key="normal" title="0" backgroundImage="button_border">
                                             <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </state>
+                                        <connections>
+                                            <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lz8-3M-2PH"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E2R-RY-HYB" userLabel="Fizz">
                                         <rect key="frame" x="108" y="0.0" width="100" height="100"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="fizzButton"/>
                                         <state key="normal" image="champagne" backgroundImage="button_border">
                                             <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </state>
+                                        <connections>
+                                            <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cxC-Pr-BZO"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jkq-om-ZDJ" userLabel="Buzz">
                                         <rect key="frame" x="0.0" y="108" width="100" height="100"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="buzzButton"/>
                                         <state key="normal" image="lightning" backgroundImage="button_border">
                                             <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </state>
+                                        <connections>
+                                            <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tGh-te-Xk1"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dwc-8K-ybh" userLabel="FizzBuzz">
                                         <rect key="frame" x="108" y="108" width="100" height="100"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="fizzBuzzButton"/>
                                         <state key="normal" image="space" backgroundImage="button_border">
                                             <color key="titleColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </state>
+                                        <connections>
+                                            <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JJt-j7-W5j"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -98,6 +114,11 @@
                             <constraint firstItem="Gal-WK-e5n" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="xFG-FD-efJ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="buzzButton" destination="Jkq-om-ZDJ" id="PaL-Nh-RhG"/>
+                        <outlet property="fizzButton" destination="E2R-RY-HYB" id="F6N-fX-m7X"/>
+                        <outlet property="numberButton" destination="W4Z-rX-kdJ" id="1Iv-CK-Le4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
