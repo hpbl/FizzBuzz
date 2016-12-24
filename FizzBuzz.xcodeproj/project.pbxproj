@@ -17,6 +17,8 @@
 		71FCE8591E0DBC7100D81469 /* Brain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FCE8581E0DBC7100D81469 /* Brain.swift */; };
 		71FCE85B1E0DCA3C00D81469 /* GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FCE85A1E0DCA3C00D81469 /* GameTests.swift */; };
 		71FCE85D1E0DCA8D00D81469 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FCE85C1E0DCA8D00D81469 /* Game.swift */; };
+		71FCE85F1E0DDE7800D81469 /* ColorPalette.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 71FCE85E1E0DDE7800D81469 /* ColorPalette.rtf */; };
+		71FCE8611E0DF2C000D81469 /* ViewControllerUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FCE8601E0DF2C000D81469 /* ViewControllerUnitTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		71FCE8581E0DBC7100D81469 /* Brain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Brain.swift; sourceTree = "<group>"; };
 		71FCE85A1E0DCA3C00D81469 /* GameTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameTests.swift; sourceTree = "<group>"; };
 		71FCE85C1E0DCA8D00D81469 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		71FCE85E1E0DDE7800D81469 /* ColorPalette.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = ColorPalette.rtf; sourceTree = "<group>"; };
+		71FCE8601E0DF2C000D81469 /* ViewControllerUnitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerUnitTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +115,7 @@
 				71FCE8341E0DBA6800D81469 /* Info.plist */,
 				71FCE8581E0DBC7100D81469 /* Brain.swift */,
 				71FCE85C1E0DCA8D00D81469 /* Game.swift */,
+				71FCE85E1E0DDE7800D81469 /* ColorPalette.rtf */,
 			);
 			path = FizzBuzz;
 			sourceTree = "<group>";
@@ -121,6 +126,7 @@
 				71FCE83F1E0DBA6800D81469 /* Info.plist */,
 				71FCE8561E0DBB3900D81469 /* BrainTests.swift */,
 				71FCE85A1E0DCA3C00D81469 /* GameTests.swift */,
+				71FCE8601E0DF2C000D81469 /* ViewControllerUnitTests.swift */,
 			);
 			path = FizzBuzzTests;
 			sourceTree = "<group>";
@@ -245,6 +251,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71FCE85F1E0DDE7800D81469 /* ColorPalette.rtf in Resources */,
 				71FCE8331E0DBA6800D81469 /* LaunchScreen.storyboard in Resources */,
 				71FCE8301E0DBA6800D81469 /* Assets.xcassets in Resources */,
 				71FCE82E1E0DBA6800D81469 /* Main.storyboard in Resources */,
@@ -285,6 +292,7 @@
 			files = (
 				71FCE8571E0DBB3900D81469 /* BrainTests.swift in Sources */,
 				71FCE85B1E0DCA3C00D81469 /* GameTests.swift in Sources */,
+				71FCE8611E0DF2C000D81469 /* ViewControllerUnitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +442,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = hpbl.FizzBuzz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -447,6 +456,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = hpbl.FizzBuzz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -530,6 +540,7 @@
 				71FCE84F1E0DBA6800D81469 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		71FCE8501E0DBA6800D81469 /* Build configuration list for PBXNativeTarget "FizzBuzzTests" */ = {
 			isa = XCConfigurationList;
@@ -538,6 +549,7 @@
 				71FCE8521E0DBA6800D81469 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		71FCE8531E0DBA6800D81469 /* Build configuration list for PBXNativeTarget "FizzBuzzUITests" */ = {
 			isa = XCConfigurationList;
@@ -546,6 +558,7 @@
 				71FCE8551E0DBA6800D81469 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
